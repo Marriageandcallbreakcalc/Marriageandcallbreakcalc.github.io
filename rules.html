@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Rules | Marriage & Call Break Calculators</title>
+    <meta name="description" content="Comprehensive rules for Marriage and Call Break card games with clear explanations and strategies.">
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+</head>
+<body>
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="navbar-brand">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 3H7c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path>
+                    <path d="m6 9 6-5 6 5"></path>
+                    <path d="M12 9v8"></path>
+                    <path d="m9 13 3 3 3-3"></path>
+                </svg>
+                Marriage & Call Break
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="navbar-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#calculators" class="nav-link">Calculators</a></li>
+                <li><a href="rules.html" class="nav-link active">Rules</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="privacy.html" class="nav-link">Privacy</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-particles" id="particles-js"></div>
+        <div class="hero-gradient"></div>
+        
+        <div class="hero-content">
+            <span class="hero-eyebrow">Master the Games</span>
+            <h1 class="hero-title">Complete Game Rules</h1>
+            <p class="hero-subtitle">Learn the official rules, strategies, and scoring systems for both Marriage and Call Break card games.</p>
+        </div>
+        
+        <div class="scroll-indicator">
+            <p>See Rules</p>
+            <div class="scroll-arrow" id="scrollDown"></div>
+        </div>
+    </section>
+    
+    <!-- Rules Navigation -->
+    <section class="section section-tabs">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-btn active" data-target="marriage-rules">
+                    <i class="ri-hearts-fill"></i> Marriage Rules
+                </button>
+                <button class="tab-btn" data-target="callbreak-rules">
+                    <i class="ri-sword-fill"></i> Call Break Rules
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Marriage Rules Section -->
+    <section id="marriage-rules" class="section rules-section tab-content active">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-gradient">Marriage Rules</h2>
+                <p class="section-subtitle">A popular three-pack Rummy game from Nepal</p>
+            </div>
+            
+            <div class="rules-container">
+                <div class="rule-card glassmorphism animate-on-scroll">
+                    <div class="rule-icon"><i class="ri-information-line"></i></div>
+                    <h3>Introduction</h3>
+                    <p>Marriage is a popular three-pack Rummy game that originated in Nepal, especially in the Kathmandu valley. It's commonly played during Hindu festivals like Dashain and Tihar, and by card game enthusiasts throughout the year.</p>
+                </div>
+                
+                <div class="rule-card glassmorphism animate-on-scroll">
+                    <div class="rule-icon"><i class="ri-group-line"></i></div>
+                    <h3>Players and Cards</h3>
+                    <ul>
+                        <li>2-5 players can participate</li>
+                        <li>Uses three standard 52-card decks (156 cards total)</li>
+                        <li>Play moves clockwise</li>
+                        <li>Each player is dealt 21 cards</li>
+                    </ul>
+                </div>
+                
+                <div class="rule-card glassmorphism animate-on-scroll">
+                    <div class="rule-icon"><i class="ri-stack-line"></i></div>
+                    <h3>Card Combinations</h3>
+                    <p>All valid combinations in Marriage consist of exactly three cards:</p>
+                    <ul>
+                        <li><span class="highlight">Tunnela (Tanella):</span> Three identical cards (e.g., three 6 of hearts)</li>
+                        <li><span class="highlight">Pure Sequence:</span> Three consecutive cards of the same suit (e.g., 3-4-5 of spades)</li>
+                        <li><span class="highlight">Dirty Sequence:</span> Two consecutive cards of the same suit plus a joker</li>
+                        <li><span class="highlight">Triplet:</span> Three cards of the same rank but different suits (e.g., K♠-K♣-K♥)</li>
+                        <li><span class="highlight">Dirty Triplet:</span> Two cards of the same rank but different suits plus a joker</li>
+                    </ul>
+                </div>
+                
+                <div class="rule-card glassmorphism animate-on-scroll">
+                    <div class="rule-icon"><i class="ri-gamepad-line"></i></div>
+                    <h3>Jokers (Wild Cards)</h3>
+                    <p>The game uses special wild cards called "jokers" determined during gameplay:</p>
+                    <ul>
+                        <li><span class="highlight">Tiplu:</span> A randomly selected card that becomes a joker</li>
+                        <li><span class="highlight">Poplu:</span> The card immediately above the tiplu in the same suit</li>
+                        <li><span class="highlight">Jhiplu:</span> The card immediately below the tiplu in the same suit</li>
+                        <li><span class="highlight">Ordinary Jokers:</span> Cards of the same rank as the tiplu in other suits</li>
+                        <li>All these cards function as wild cards (jokers) and can substitute for any card</li>
+                        <li>A combination of jhiplu-tiplu-poplu in the same suit is called a "marriage" - the most valuable combination</li>
+                    </ul>
+                </div>
+                
+                <div class="rule-card glassmorphism animate-on-scroll">
+                    <div class="rule-icon"><i class="ri-play-circle-line"></i></div>
+                    <h3>Gameplay</h3>
+                    <p>The game follows a draw-and-discard pattern:</p>
+                    <ol>
+                        <li>Player to dealer's left starts</li>
+                        <li>On your turn, draw either the top card from the face-down stack or the previous player's discard</li>
+                        <li>Discard one card face-up</li>
+                        <li>The first player to collect three tunnelas or pure sequences selects the tiplu card (which determines all jokers)</li>
+                        <li>Other players who later collect three tunnelas/pure sequences can look at the tiplu</li>
+                        <li>A player who has seen the tiplu cannot pick up a discarded joker</li>
+                    </ol>
+                </div>
+                
+                <div class="rule-card glassmorphism animate-on-scroll">
+                    <div class="rule-icon"><i class="ri-strategy-line"></i></div>
+                    <h3>Alternative Strategy: Dublees</h3>
+                    <p>Instead of three-card combinations, players may collect <span class="highlight">dublees</span> (pairs of identical cards):</p>
+                    <ul>
+                        <li>A player needs eight dublees to win</li>
+                        <li>After collecting seven dublees, the player can look at the tiplu</li>
+                        <li>Jokers cannot be used when forming dublees</li>
+                    </ul>
+                </div>
+                
+                <div class="rule-card glassmorphism animate-on-scroll">
+                    <div class="rule-icon"><i class="ri-flag-line"></i></div>
+                    <h3>Ending the Game</h3>
+                    <p>The game ends when either:</p>
+                    <ul>
+                        <li>A player who has seen the tiplu forms seven valid combinations (three initial combinations plus four more)</li>
+                        <li>A player collects eight dublees (pairs)</li>
+                    </ul>
+                </div>
+                
+                <div class="rule-card glassmorphism animate-on-scroll">
+                    <div class="rule-icon"><i class="ri-calculator-line"></i></div>
+                    <h3>Scoring</h3>
+                    <p>Points are scored for:</p>
+                    <ul>
+                        <li>Maal cards (tiplu, poplu, jhiplu) in hand</li>
+                        <li>Tunnelas declared at the beginning of the game</li>
+                        <li>Marriages (jhiplu-tiplu-poplu of the same suit)</li>
+                        <li>The winner receives points from other players based on whether they've seen the joker</li>
+                        <li>Players with dublees receive bonus points</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call Break Rules Section -->
+    <section id="callbreak-rules" class="section rules-section tab-content">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-gradient">Call Break Rules</h2>
+                <p class="section-subtitle">A strategic trick-taking card game popular in South Asia</p>
+            </div>
+            
+            <div class="rules-container">
+                <div class="rule-card glassmorphism animate-on-scroll">
+                    <div class="rule-icon"><i class="ri-information-line"></i></div>
+                    <h3>Introduction</h3>
+                    <p>Call Break is a popular trick-taking card game widely played in Nepal, India, and other South Asian countries. It's similar to Spades but with unique bidding and scoring rules that make it especially engaging.</p>
+                </div>
+                
+                <div class="rule-card glassmorphism animate-on-scroll">
+                    <div class="rule-icon"><i class="ri-group-line"></i></div>
+                    <h3>Players and Cards</h3>
+                    <ul>
+                        <li>Played with exactly 4 players</li>
+                        <li>Uses a standard 52-card deck</li>
+                        <li>Each player is dealt 13 cards</li>
+                        <li>Spades (♠) are always trump cards</li>
+                    </ul>
+                </div>
+                
+                <div class="rule-card glassmorphism animate-on-scroll">
+                    <div class="rule-icon"><i class="ri-sort-asc"></i></div>
+                    <h3>Card Rankings</h3>
+                    <p>Cards in each suit rank from highest to lowest:</p>
+                    <ul>
+                        <li>Ace (highest) → King → Queen → Jack → 10 → 9 → ... → 2 (lowest)</li>
+                        <li>Spades always beat other suits regardless of card rank</li>
+                    </ul>
+                </div>
+                
+                <div class="rule-card glassmorphism animate-on-scroll">
+                    <div class="rule-icon"><i class="ri-flow-chart"></i></div>
+                    <h3>Game Flow</h3>
+                    <ol>
+                        <li><span class="highlight">Bidding:</span> Each player makes a "call" (bid) for the number of tricks they expect to win (minimum 1)</li>
+                        <li><span class="highlight">Gameplay:</span> 13 rounds of trick-taking (one card played by each player per round)</li>
+                        <li><span class="highlight">Scoring:</span> Points awarded based on performance against the bid</li>
+                        <li><span class="highlight">Rounds:</span> A full game typically consists of 5 rounds (or more, as agreed)</li>
+                    </ol>
+                </div>
+                
+                <div class="rule-card glassmorphism animate-on-scroll">
+                    <div class="rule-icon"><i class="ri-game-line"></i></div>
+                    <h3>Trick-Taking Rules</h3>
+                    <ul>
+                        <li>First player for each trick can lead with any card</li>
+                        <li>Other players must follow the led suit if possible</li>
+                        <li>If unable to follow suit, players may play any card (including trumps)</li>
+                        <li>Highest card of the led suit wins the trick, unless a spade is played</li>
+                        <li>If any spades are played, the highest spade wins the trick</li>
+                        <li>Winner of each trick leads the next trick</li>
+                    </ul>
+                </div>
+                
+                <div class="rule-card glassmorphism animate-on-scroll">
+                    <div class="rule-icon"><i class="ri-coins-line"></i></div>
+                    <h3>Detailed Scoring</h3>
+                    <p>Call Break uses a unique scoring system:</p>
+                    <ul>
+                        <li><span class="highlight">Bid Achieved Exactly:</span> Player gets 10 points + the bid value</li>
+                        <li><span class="highlight">Bid Exceeded:</span> Player gets the bid value + 1 point for each extra trick</li>
+                        <li><span class="highlight">Bid Not Met:</span> Player loses 10 points (negative score)</li>
+                    </ul>
+                </div>
+                
+                <div class="rule-card glassmorphism animate-on-scroll">
+                    <div class="rule-icon"><i class="ri-calculator-line"></i></div>
+                    <h3>Scoring Examples</h3>
+                    <ul>
+                        <li>Player bids 5, wins exactly 5 tricks: 5 + 10 = 15 points</li>
+                        <li>Player bids 6, wins 8 tricks: 6 + 2 = 8 points</li>
+                        <li>Player bids 7, wins 5 tricks: -10 points (failed to meet bid)</li>
+                    </ul>
+                </div>
+                
+                <div class="rule-card glassmorphism animate-on-scroll">
+                    <div class="rule-icon"><i class="ri-lightbulb-flash-line"></i></div>
+                    <h3>Strategy Tips</h3>
+                    <ul>
+                        <li>Bid conservatively if you have few spades</li>
+                        <li>Save high spades for capturing important tricks</li>
+                        <li>When leading, consider starting with a high card of a suit where you have few cards</li>
+                        <li>Keep track of which spades have been played</li>
+                        <li>Be careful with Aces of non-trump suits - they're easily trumped</li>
+                    </ul>
+                </div>
+                
+                <div class="rule-card glassmorphism animate-on-scroll">
+                    <div class="rule-icon"><i class="ri-trophy-line"></i></div>
+                    <h3>Winner Determination</h3>
+                    <p>The player with the highest total score after all rounds (typically 5) is the winner of the game.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="section section-faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Common questions about Marriage and Call Break games</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item glassmorphism">
+                    <div class="faq-question">
+                        <h3>What makes Marriage different from other Rummy games?</h3>
+                        <span class="faq-toggle"><i class="ri-add-line"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Marriage is unique because of its joker system. The tiplu, poplu, and jhiplu cards create a special dynamic not found in other Rummy variants. Additionally, the option to collect dublees (pairs) as an alternative strategy gives players more flexibility.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item glassmorphism">
+                    <div class="faq-question">
+                        <h3>Can I use jokers in Call Break?</h3>
+                        <span class="faq-toggle"><i class="ri-add-line"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, Call Break is played with a standard 52-card deck with no jokers. Spades serve as permanent trump cards, which is somewhat similar to how jokers function in other games.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item glassmorphism">
+                    <div class="faq-question">
+                        <h3>What is the maximum number of points possible in a Marriage game?</h3>
+                        <span class="faq-toggle"><i class="ri-add-line"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The maximum points vary based on the specific scoring system being used. However, a player with multiple marriages (jhiplu-tiplu-poplu combinations) and tunnelas can score very high, potentially 50+ points in a single hand.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item glassmorphism">
+                    <div class="faq-question">
+                        <h3>Is it better to bid high or low in Call Break?</h3>
+                        <span class="faq-toggle"><i class="ri-add-line"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>It depends on your hand. The safest strategy is to bid conservatively (what you're confident you can achieve) because failing to meet your bid results in negative points. However, successful high bids can give you a significant lead. The ideal approach is to assess your hand strength, particularly your spades, before deciding.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="section section-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Play?</h2>
+                <p>Use our calculators to keep track of scores and enjoy the games!</p>
+                <div class="cta-buttons">
+                    <a href="index.html#calculators" class="btn btn-primary">
+                        <i class="ri-calculator-line"></i>
+                        Try Calculators
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">Marriage & Call Break</div>
+            <div class="footer-links">
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="index.html#calculators" class="footer-link">Calculators</a>
+                <a href="rules.html" class="footer-link">Rules</a>
+                <a href="about.html" class="footer-link">About</a>
+                <a href="privacy.html" class="footer-link">Privacy</a>
+            </div>
+            <p class="copyright">&copy; 2024 Marriage & Call Break Calculators. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/modern-app.js"></script>
+    <script>
+        // Tab functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons and contents
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Show corresponding content
+                    const targetId = this.dataset.target;
+                    document.getElementById(targetId).classList.add('active');
+                });
+            });
+            
+            // FAQ toggles
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', function() {
+                    item.classList.toggle('active');
+                    const toggle = this.querySelector('.faq-toggle i');
+                    toggle.classList.toggle('ri-add-line');
+                    toggle.classList.toggle('ri-subtract-line');
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

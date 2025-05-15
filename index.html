@@ -3,29 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Marriage & Call Break Calc</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Marriage & Call Break Calculators | Modern Card Game Tools</title>
+    <meta name="description" content="Easy-to-use calculators for Marriage and Call Break card games with modern design and instant results.">
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
 </head>
 <body>
-    <header>
-        <h1>Privacy Policy</h1>
-        <h2>Marriage & Call Break Calc</h2>
-    </header>
-    <main>
-        <div class="container">
-            <div id="privacy-content"></div>
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="navbar-brand">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 3H7c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path>
+                    <path d="m6 9 6-5 6 5"></path>
+                    <path d="M12 9v8"></path>
+                    <path d="m9 13 3 3 3-3"></path>
+                </svg>
+                Marriage & Call Break
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="navbar-links" id="navLinks">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="#calculators" class="nav-link">Calculators</a></li>
+                <li><a href="rules.html" class="nav-link">Rules</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="privacy.html" class="nav-link">Privacy</a></li>
+            </ul>
         </div>
-    </main>
-    <script>
-        // Fetch and display the privacy.md content
-        fetch('privacy.md')
-            .then(response => response.text())
-            .then(text => {
-                document.getElementById('privacy-content').innerHTML = text;
-            })
-            .catch(error => {
-                console.error('Error loading privacy policy:', error);
-            });
-    </script>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-particles" id="particles-js"></div>
+        <div class="hero-gradient"></div>
+        
+        <div class="hero-content">
+            <span class="hero-eyebrow">Premium Card Game Tools</span>
+            <h1 class="hero-title">Marriage & Call Break<br>Calculators</h1>
+            <p class="hero-subtitle">Elevate your card game experience with our sleek, modern calculators that make scoring easy and enjoyable for everyone.</p>
+            
+            <div class="hero-buttons">
+                <a href="#marriage" class="btn btn-primary">
+                    <i class="ri-heart-fill"></i>
+                    Marriage Calculator
+                </a>
+                <a href="#callbreak" class="btn btn-outline">
+                    <i class="ri-gamepad-fill"></i>
+                    Call Break Calculator
+                </a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <p>Discover More</p>
+            <div class="scroll-arrow" id="scrollDown"></div>
+        </div>
+    </section>
+    
+    <!-- Calculators Section -->
+    <section id="calculators" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-gradient">Our Calculators</h2>
+                <p class="section-subtitle">Powerful tools designed for card game enthusiasts</p>
+            </div>
+            
+            <div class="grid grid-2">
+                <!-- Marriage Calculator Card -->
+                <div class="card card-highlight" id="marriage">
+                    <div class="card-body">
+                        <div class="card-icon">
+                            <i class="ri-hearts-fill"></i>
+                        </div>
+                        <span class="chip chip-primary">Popular</span>
+                        <h3 class="card-title">Marriage Calculator</h3>
+                        <div class="card-content">
+                            <p>
+                                Calculate points for the classic Nepali card game "Marriage" with precision and ease. 
+                                Enter player scores and get instant results to keep your game night flowing smoothly.
+                            </p>
+                            <ul class="feature-list">
+                                <li class="feature-item">Instant score tabulation</li>
+                                <li class="feature-item">Support for 2-6 players</li>
+                                <li class="feature-item">Save and recall games</li>
+                                <li class="feature-item">Track statistics across sessions</li>
+                                <li class="feature-item">Custom scoring rules</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">
+                                <i class="ri-calculator-line"></i>
+                                Open Calculator
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Call Break Calculator Card -->
+                <div class="card card-highlight" id="callbreak">
+                    <div class="card-body">
+                        <div class="card-icon">
+                            <i class="ri-sword-fill"></i>
+                        </div>
+                        <h3 class="card-title">Call Break Calculator</h3>
+                        <div class="card-content">
+                            <p>
+                                Simplify Call Break scoring with our specialized calculator. Track bids, tricks, and points 
+                                across multiple rounds with a clean interface that makes calculations effortless.
+                            </p>
+                            <ul class="feature-list">
+                                <li class="feature-item">Bid and trick validation</li>
+                                <li class="feature-item">Multiple scoring methods</li>
+                                <li class="feature-item">Round-by-round history</li>
+                                <li class="feature-item">Player performance charts</li>
+                                <li class="feature-item">Customizable penalties</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">
+                                <i class="ri-calculator-line"></i>
+                                Open Calculator
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="section section-features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Our Calculators</h2>
+                <p class="section-subtitle">Designed with card players in mind</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="feature-card glassmorphism">
+                    <i class="ri-speed-up-fill feature-icon"></i>
+                    <h3>Lightning Fast</h3>
+                    <p>Get instant calculations and updates without any delay, keeping your game moving smoothly.</p>
+                </div>
+                
+                <div class="feature-card glassmorphism">
+                    <i class="ri-device-fill feature-icon"></i>
+                    <h3>Works Everywhere</h3>
+                    <p>Use on any device - mobile, tablet, or desktop with a responsive design that adapts perfectly.</p>
+                </div>
+                
+                <div class="feature-card glassmorphism">
+                    <i class="ri-paint-fill feature-icon"></i>
+                    <h3>Modern Design</h3>
+                    <p>Enjoy a beautiful, intuitive interface that makes scoring pleasant and error-free.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="section section-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Card Game Night?</h2>
+                <p>Try our calculators now and focus on the fun, not the math.</p>
+                <div class="cta-buttons">
+                    <a href="#calculators" class="btn btn-primary">
+                        <i class="ri-arrow-right-line"></i>
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">Marriage & Call Break</div>
+            <div class="footer-links">
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="#calculators" class="footer-link">Calculators</a>
+                <a href="rules.html" class="footer-link">Rules</a>
+                <a href="about.html" class="footer-link">About</a>
+                <a href="privacy.html" class="footer-link">Privacy</a>
+            </div>
+            <p class="copyright">&copy; 2024 Marriage & Call Break Calculators. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/modern-app.js"></script>
 </body>
 </html> 
